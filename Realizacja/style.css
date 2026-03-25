@@ -1,0 +1,128 @@
+* {
+    font-family: Helvetica;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('wiosna.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    font-size: 25px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+.napis {
+    font-size: 25px;
+}
+
+span[id="table"] {
+    position: relative;
+    background-color: rgba(65, 99, 67, 0.5);
+    height: 125px;
+    width: 550px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    right: 20px;
+    opacity: 0;
+    float: left;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid white;
+    margin: 29px 5px 5px 12px;
+    transition: 1s;
+}
+.number.visible {
+    right: 0;
+    opacity: 1;
+}
+button {
+    margin: 10px 0 0 0;
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    border: 1px solid green;
+    border-radius: 20px;
+    color: white;
+    transition: 0.2s;
+    font-size: 120%;
+}
+
+button:hover {
+    background-color: darkgreen;
+    transform: scale(1.15);
+    transition: 0.2s;
+}
+
+button:disabled {
+    border: 1px solid #444;
+    background-color: #444;
+    transition: 1s;
+}
+
+@media (width < 600px){
+
+    h2{
+        font-size:90px;
+    }
+
+    footer{
+        margin: 40px 0 0 0;
+        font-size:20px;
+    }
+
+    #table{
+        height:200px;
+        width:375px;
+    }
+
+    .napis{
+        margin:0 60px;
+        text-align:center;
+    }
+
+    .number{
+        width:75px;
+        height:75px;
+        margin:14px 20px 0 25px;
+    }
+
+}
